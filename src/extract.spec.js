@@ -626,6 +626,6 @@ describe('Raw translation data', () => {
         endDelimiter: '',
       })._extractTranslationData(fixtures.FILENAME_0, fixtures.HTML_INCOMPLETE_COMMENT);
     };
-    expect(extractCall).toThrow('Assigning to rvalue, when trying to parse `ng-bind="\'Cancel\' |translate">` foo.htm:1');
+    expect(extractCall).toThrow('Assigning to rvalue, when trying to parse `ng-bind="\'Cancel\' |translate"></button>` foo.htm:2');
   });
 });
